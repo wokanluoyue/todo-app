@@ -1,0 +1,33 @@
+/* 筛选按钮状态 */
+.filter-btn {
+  color: #6b7280;
+  border-color: #e5e7eb;
+  background: #fff;
+}
+
+.filter-btn:hover {
+  border-color: #93c5fd;
+  color: #2563eb;
+}
+
+.filter-btn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+/* 待办项完成状态 */
+.todo-text.done {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* 待办项进入动画 */
+.todo-item {
+  animation: slideIn 0.15s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
